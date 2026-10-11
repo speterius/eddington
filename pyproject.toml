@@ -1,0 +1,21 @@
+[project]
+name = "eddington"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "peter-seres", email = "peter.seres.ae@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "astroquery>=0.4.12.dev11095",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+]
+
+[project.scripts]
+eddington = "eddington:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
